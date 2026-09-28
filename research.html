@@ -1,0 +1,143 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cleft Care Information Bridge — source-traceable cleft-care information for China.">
+<title>Research</title><style>
+:root{
+--ink:#163b3c;--ink2:#24585a;--muted:#5f7070;--paper:#f7f5ef;--white:#fffdf9;
+--line:#ddd9cf;--sage:#e8efe9;--blue:#e9f0f2;--rose:#f1e7eb;--sand:#f2e8dc;
+--accent:#1f5b5d;--accent2:#9a624d;--serif:Georgia,"Times New Roman","Noto Serif SC","Songti SC",serif;
+--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC",Arial,sans-serif
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 var(--sans);transition:opacity .18s ease}
+body.page-leave{opacity:.35}
+a{color:inherit}.wrap{width:min(1180px,92vw);margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(250,248,243,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:290px}
+.brandmark{width:45px;height:45px;border:1.5px solid var(--ink);border-radius:50% 50% 50% 13px;display:grid;place-items:center;font:24px var(--serif);transform:rotate(-8deg)}
+.brandtext strong{display:block;font:600 20px/1.05 var(--serif);letter-spacing:-.02em}.brandtext span{display:block;font-size:11px;margin-top:4px;letter-spacing:.08em}
+.navlinks{display:flex;gap:18px;align-items:center;margin-left:auto}.navlinks a{text-decoration:none;font-weight:700;font-size:13px;padding:8px 2px;white-space:nowrap}.navlinks a.active{color:var(--accent);border-bottom:2px solid var(--accent)}
+.lang{border:1px solid #d5d1c7;background:#ece9e2;padding:9px 13px;border-radius:22px;font:700 12px var(--sans);color:var(--ink);cursor:pointer;white-space:nowrap}
+.hero{min-height:430px;display:flex;overflow:hidden;background:#eae5da}.hero-copy{width:53%;padding:64px 38px 62px max(5vw,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;background:linear-gradient(90deg,#f6f2e9 0%,#f6f2e9 68%,rgba(246,242,233,.7) 100%);position:relative;z-index:2}
+.hero-image{width:47%;background:center/cover url("hero-child.jpg");min-height:430px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#527576;font-weight:800;margin-bottom:12px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.025em}h1{font-size:clamp(42px,5vw,70px);line-height:1.03;margin:0 0 20px}h2{font-size:clamp(32px,3.6vw,48px);line-height:1.1;margin:0 0 14px}h3{font-size:25px;line-height:1.2;margin:0 0 10px}.hero p,.page-hero p{font-size:18px;color:#536766;max-width:690px;margin:0 0 24px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:25px;border:1px solid #aebfbb;text-decoration:none;font-size:14px;font-weight:800;background:var(--white);transition:.2s}.btn:hover{transform:translateY(-1px)}.btn.primary{background:var(--accent);border-color:var(--accent);color:white}
+.section{padding:58px 0}.section-head{margin-bottom:24px}.section-desc{font-size:17px;color:var(--muted);max-width:760px}
+.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:18px;padding:27px 25px;background:var(--white);min-height:220px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 3px 14px rgba(26,55,52,.035)}.card.sage{background:var(--sage)}.card.blue{background:var(--blue)}.card.rose{background:var(--rose)}.card.sand{background:var(--sand)}.card h3{font-size:28px}.card p{color:#536766;font-size:15px}.card .link{font-weight:800;color:var(--accent);text-decoration:none;font-size:14px}
+.feature{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:30px}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dataset-band{border:1px solid var(--line);border-radius:20px;background:linear-gradient(110deg,#eef3ee,#f0f4f2 55%,#edf1ef);padding:32px;display:grid;grid-template-columns:1.45fr .55fr .9fr;gap:26px;align-items:center}.bigstat{border-left:1px solid #c6d2cd;padding-left:24px}.bigstat strong{font:500 54px var(--serif);display:block}.bigstat span{font-size:14px;color:#526666}.china{height:150px;position:relative;display:grid;place-items:center}.china:before{content:"中国";font:500 64px var(--serif);color:#cbd8d2;letter-spacing:.15em}.dot{position:absolute;width:10px;height:10px;border-radius:50%;background:#46777a;box-shadow:0 0 0 5px rgba(70,119,122,.11)}
+.d1{left:42%;top:32%}.d2{left:55%;top:52%}.d3{left:63%;top:39%}.d4{left:50%;top:66%}
+.quote{margin-top:18px;padding:16px 18px;border-left:3px solid #d6b3a4;background:#faf5ef;font-family:var(--serif);font-size:18px}
+.page-hero{padding:64px 0 42px;border-bottom:1px solid var(--line);background:linear-gradient(115deg,#f3efe7,#eef3ef)}
+.page-hero h1{font-size:clamp(40px,4.7vw,62px);margin-bottom:12px}
+.path-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:28px;min-height:285px}.step .num{font:500 48px var(--serif);color:#688585;margin-bottom:22px}.step h3{font-size:25px}.step p{color:#526565}
+.support-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.support-card{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:27px;display:flex;flex-direction:column;min-height:250px}.support-card .status{font-size:12px;font-weight:800;color:#6b7e7c;letter-spacing:.05em;margin-bottom:8px}.support-card h3{font-size:26px}.support-card p{color:#526565}.support-card .source{margin-top:auto;align-self:flex-start}
+.notice{border-left:4px solid var(--accent);background:#edf3f0;border-radius:10px;padding:18px 20px;color:#385756;margin-top:26px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.controls input,.controls select{border:1px solid #c8d0cb;border-radius:12px;background:var(--white);padding:12px 14px;font:14px var(--sans);color:var(--ink);min-width:210px}
+.record-list{display:grid;gap:14px}.record{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:24px;display:grid;grid-template-columns:105px 1fr 130px;gap:18px;align-items:start}.rid{font:600 15px var(--serif);color:#718584}.record h3{font-size:25px;margin:0 0 5px}.org{font-weight:700;color:#566867;margin-bottom:10px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}.chip{background:#edf1ed;border-radius:16px;padding:4px 9px;font-size:12px;font-weight:700;color:#61706f}.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.rgrid>div{background:#f3f1eb;border-radius:12px;padding:12px}.rgrid b{font-size:12px;color:#536766}.rgrid p{margin:4px 0 0;font-size:14px;color:#344f50}.source{justify-self:end;font-weight:800;text-decoration:none;color:var(--accent);font-size:13px}
+.pagination{display:flex;align-items:center;justify-content:center;gap:8px;margin:30px 0}.pagebtn{border:1px solid #b8c7c3;background:var(--white);border-radius:10px;padding:9px 13px;font-weight:800;cursor:pointer}.pagebtn.active{background:var(--accent);color:white;border-color:var(--accent)}.pagebtn:disabled{opacity:.4;cursor:not-allowed}
+.site-pager{display:flex;justify-content:space-between;gap:14px;margin-top:45px;padding-top:22px;border-top:1px solid var(--line)}.site-pager a{display:block;text-decoration:none;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--white);font-weight:800}.site-pager .right{text-align:right}
+.footer{border-top:1px solid var(--line);padding:25px 0 35px;margin-top:45px;color:#667473;font-size:13px}.footerrow{display:flex;justify-content:space-between;gap:25px}.footerlinks{display:flex;gap:14px;flex-wrap:wrap}.footerlinks a{text-decoration:none}
+.lang-en .zh-only{display:none!important}.lang-zh .en-only{display:none!important}
+.fade-in{animation:fade .35s ease}@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.nav{flex-wrap:wrap;padding:10px 0}.brand{min-width:auto}.navlinks{order:3;width:100%;overflow:auto;gap:16px}.hero-copy{width:58%;padding-left:4vw}.hero-image{width:42%}.card-grid{grid-template-columns:repeat(2,1fr)}.dataset-band{grid-template-columns:1fr 1fr}.path-grid{grid-template-columns:repeat(2,1fr)}.record{grid-template-columns:75px 1fr}.source{grid-column:2;justify-self:start}.rgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){body{font-size:15px}.brandtext strong{font-size:17px}.hero{display:block}.hero-copy,.hero-image{width:100%}.hero-copy{padding:50px 5vw}.hero-image{min-height:260px}.card-grid,.feature-grid,.support-grid,.path-grid{grid-template-columns:1fr}.dataset-band{grid-template-columns:1fr}.bigstat{border-left:0;border-top:1px solid #c6d2cd;padding:18px 0 0}.record{grid-template-columns:1fr}.source{grid-column:auto}.rgrid{grid-template-columns:1fr}.site-pager{flex-direction:column}.site-pager .right{text-align:left}}
+</style>
+<style id="final-editorial-palette">
+:root{--ink:#262521!important;--muted:#68645d!important;--paper:#f7f4ed!important;--white:#fbfaf6!important;--line:#d9d5cc!important;--accent:#b14f38!important;--soft:#eee9e1!important}
+body{background:var(--paper)!important;color:var(--ink)!important}
+.topbar{background:rgba(247,244,237,.97)!important;border-color:var(--line)!important}
+.brand,.brandtext strong,.brand b,.links a,.lang{color:var(--ink)!important}
+.brandtext span{color:#6f6a62!important}.mark{border-color:#5b3f36!important}
+.links a.active{border-color:var(--accent)!important}
+.lang{background:#eeeae2!important}
+.hero,.section,.dataset,.mission,.footer,.top{border-color:var(--line)!important}
+.eyebrow,.kicker{color:var(--accent)!important}
+.hero h1,.section h2,.entry h3,.dataset h2,.mission h2,.top h1,.title,.downloads h2{color:var(--ink)!important}
+.hero p,.section-desc,.entry p,.dataset p,.mission p,.hero-note,.footer,.top p,.evidence,.notice,.count{color:var(--muted)!important}
+.hero-note,.dataset-side,.quote{border-color:#cdbdb5!important}
+.cta,.btn.primary,.pager button.active{background:var(--ink)!important;border-color:var(--ink)!important;color:#fff!important}
+.entry:hover{background:#f1eee7!important}
+.entry .arrow,.source,.back{color:var(--accent)!important}
+.entry,.record,.resource-card,.support-card{background:var(--white)!important;border-color:var(--line)!important}
+.chip{background:#eeeae2!important;color:#6b655d!important}
+.rgrid>div{background:#f0ece4!important}.rgrid b{color:#777168!important}.rgrid p{color:#4e4a44!important}
+.toolrow input,.toolrow select,.pager button,.download,.btn{background:var(--white)!important;border-color:#cfc8bd!important;color:var(--ink)!important}
+.downloads{background:#f0ece4!important}.resource-card .status,.resource-card .org,.resource-card p{color:var(--muted)!important}
+.support-card .status,.support-card .org,.support-card p{color:var(--muted)!important}
+.support-card .source,.resource-card .source{color:var(--accent)!important}
+@media(max-width:700px){.links a.active{border-color:var(--accent)!important}}
+</style>
+<style id="editorial-final-palette">:root{--ink:#262521!important;--ink2:#4e4a44!important;--muted:#68645d!important;--paper:#f7f4ed!important;--white:#fbfaf6!important;--line:#d9d5cc!important;--accent:#b14f38!important;--accent2:#b14f38!important}body{background:var(--paper)!important;color:var(--ink)!important}.topbar{background:rgba(247,244,237,.97)!important;border-color:var(--line)!important}.brand,.brandtext strong,.brandtext b,.links a,.lang{color:var(--ink)!important}.brandtext span{color:#6f6a62!important}.mark,.brandmark{border-color:#5b3f36!important}.links a.active{border-color:var(--accent)!important}.lang{background:#eeeae2!important}.eyebrow,.kicker{color:var(--accent)!important}.hero h1,.section h2,.entry h3,.dataset h2,.mission h2,.page-hero h1,.feature h2,.card h3,.resource-card h3,.support-card h3,.title,.top h1{color:var(--ink)!important}.hero p,.section-desc,.entry p,.dataset p,.mission p,.hero-note,.footer,.page-hero p,.feature p,.card p,.resource-card p,.support-card p,.org,.count,.notice,.evidence{color:var(--muted)!important}.hero-note,.dataset-side,.quote{border-color:#cdbdb5!important}.cta,.btn.primary,.pager button.active{background:var(--ink)!important;border-color:var(--ink)!important;color:#fff!important}.entry:hover{background:#f1eee7!important}.entry,.record,.resource-card,.support-card,.feature,.card,.coding-note,.chartbox{background:var(--white)!important;border-color:var(--line)!important}.chip{background:#eeeae2!important;color:#6b655d!important}.rgrid>div{background:#f0ece4!important}.rgrid b{color:#777168!important}.rgrid p{color:#4e4a44!important}.toolrow input,.toolrow select,.pager button,.download,.btn{background:var(--white)!important;border-color:#cfc8bd!important;color:var(--ink)!important}.downloads{background:#f0ece4!important}.source,.back,.entry .arrow{color:var(--accent)!important}.card.sage,.card.blue,.card.rose,.card.sand{background:var(--white)!important}.card-grid .card{border:1px solid var(--line)!important}.feature-grid .feature{background:var(--white)!important}.support-card .source,.resource-card .source{color:var(--accent)!important}.bartrack{background:#e8e3da!important}.bartrack i{background:var(--accent)!important}</style>
+<style id="ccib-typography-fix">
+.feature h2{font-size:32px;line-height:1.12;margin:0 0 14px}
+.feature .section-desc{font-size:17px;line-height:1.75;max-width:760px}
+@media(max-width:600px){.feature h2{font-size:29px}.feature .section-desc{font-size:16px}}
+</style><style id="ccib-research-analysis">
+.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.analysis-card{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:26px 28px}
+.analysis-card h3{font-size:27px;margin-bottom:7px}
+.analysis-note{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 20px}
+.mini-bars{display:grid;gap:13px}
+.mini-row{display:grid;grid-template-columns:128px 1fr 42px;gap:10px;align-items:center;font-size:13px}
+.mini-label{color:var(--muted);font-weight:700}
+.bartrack{height:10px;border-radius:999px;background:#e8e3da;overflow:hidden}
+.bartrack i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.mini-value{text-align:right;font-weight:800;color:var(--ink)}
+.score-table{width:100%;border-collapse:collapse;font-size:14px}
+.score-table th,.score-table td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:left}
+.score-table th{font-size:12px;letter-spacing:.04em;color:var(--muted);font-weight:800}
+.score-table td:last-child,.score-table th:last-child{text-align:right}
+.analysis-callout{margin-top:16px;padding:15px 17px;background:#f4eee7;border-left:3px solid var(--accent);border-radius:8px;font-size:14px;line-height:1.7;color:#514b45}
+.source-list{margin:16px 0 0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.75}
+.source-list a{color:var(--accent);font-weight:700}
+@media(max-width:700px){.analysis-grid{grid-template-columns:1fr}.mini-row{grid-template-columns:112px 1fr 38px}}
+</style></head>
+<body class="lang-zh"><header class="topbar"><div class="wrap nav">
+<a class="brand" href="index.html"><div class="brandmark">♡</div><div class="brandtext"><strong><span class="zh-only">唇腭裂医疗信息桥梁</span><span class="en-only">Cleft Care Information Bridge</span></strong><span><span class="zh-only">为家庭连接更清晰的医疗信息</span><span class="en-only">Connecting families to clearer care information</span></span></div></a>
+<nav class="navlinks"><a class="" href="index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a><a class="" href="dataset.html"><span class="zh-only">数据集</span><span class="en-only">Dataset</span></a><a class="" href="resources.html"><span class="zh-only">医疗资源</span><span class="en-only">Resources</span></a><a class="" href="pathway.html"><span class="zh-only">就诊路径</span><span class="en-only">Care Pathway</span></a><a class="" href="support.html"><span class="zh-only">公益与支持</span><span class="en-only">Support</span></a><a class="active" href="research.html"><span class="zh-only">研究框架</span><span class="en-only">Research</span></a><a class="" href="about.html"><span class="zh-only">关于项目</span><span class="en-only">About</span></a></nav><button id="langToggle" class="lang" type="button">切换至英文</button>
+</div></header><main class="fade-in"><section class="page-hero"><div class="wrap"><div class="kicker"><span class="zh-only">研究框架</span><span class="en-only">RESEARCH</span></div><h1><span class="zh-only">信息摩擦：医疗资源为什么仍然难以找到？</span><span class="en-only">Information friction: why can care still be hard to find?</span></h1><p><span class="zh-only">项目把唇腭裂医疗信息的“可获得性”拆解成可观察、可记录的维度，并用公开来源建立可追溯的数据基础。</span><span class="en-only">The project treats access to cleft-care information as an observable problem, breaking it into measurable dimensions and building a traceable public-source dataset.</span></p></div></section>
+<section class="section wrap"><div class="card-grid">
+<div class="card sage"><h3><span class="zh-only">可发现性</span><span class="en-only">Findability</span></h3><p><span class="zh-only">家庭能否在合理的搜索路径中找到相关服务、机构和申请入口。</span><span class="en-only">Whether families can find relevant services, institutions and application routes through a reasonable search path.</span></p></div>
+<div class="card blue"><h3><span class="zh-only">完整性</span><span class="en-only">Completeness</span></h3><p><span class="zh-only">关键的治疗、阶段、费用或支持信息是否足够完整。</span><span class="en-only">Whether key treatment, stage, cost or support information is sufficiently complete.</span></p></div>
+<div class="card rose"><h3><span class="zh-only">可靠性</span><span class="en-only">Reliability</span></h3><p><span class="zh-only">信息是否能够追溯到医院、政府或公益组织等可靠来源。</span><span class="en-only">Whether information can be traced to a reliable hospital, government or charitable source.</span></p></div>
+<div class="card sand"><h3><span class="zh-only">可行动性</span><span class="en-only">Actionability</span></h3><p><span class="zh-only">信息是否能帮助用户采取下一步行动，例如预约、咨询或申请救助。</span><span class="en-only">Whether information helps users take the next step, such as booking, contacting or applying for support.</span></p></div>
+</div></section>
+<section class="section wrap" style="padding-top:0"><div class="feature-grid">
+<div class="feature"><h2><span class="zh-only">数据如何形成？</span><span class="en-only">How the dataset is built</span></h2><p class="section-desc"><span class="zh-only">从国家指南、医院页面、基金会规则和地方政府公开信息中提取记录，保留原始来源、日期、服务类型、就诊阶段、支持方式和覆盖范围。</span><span class="en-only">Records are drawn from national guidance, hospital pages, foundation rules and local government information, preserving the original source, date, service type, care stage, assistance and scope.</span></p><a class="btn primary" href="dataset.html"><span class="zh-only">查看50条数据 →</span><span class="en-only">View 50 records →</span></a></div>
+<div class="feature"><h2><span class="zh-only">下一步</span><span class="en-only">Next phase</span></h2><p class="section-desc"><span class="zh-only">下一阶段将继续扩展省市覆盖，并进一步分析不同类型来源在完整性与可行动性上的差异。</span><span class="en-only">The next phase will expand provincial and city coverage and examine how different source types vary in completeness and actionability.</span></p></div>
+</div></section><section class="section wrap" style="padding-top:0"><div class="section-head"><h2><span class="zh-only">初步描述性分析</span><span class="en-only">Preliminary descriptive analysis</span></h2><p class="section-desc"><span class="zh-only">以下结果只描述当前50条记录的编码分布，不代表全国医疗信息的总体水平，也不能用于推断因果关系。</span><span class="en-only">These results describe the coding distribution of the current 50 records. They do not represent national information quality and should not be used to infer causality.</span></p></div>
+<div class="analysis-grid">
+<div class="analysis-card"><h3><span class="zh-only">记录构成</span><span class="en-only">Dataset composition</span></h3><p class="analysis-note"><span class="zh-only">50条记录按来源/用途分类。公益救助与专科医疗信息构成主体。</span><span class="en-only">The 50 records are grouped by source/use. Medical assistance and specialist-care information make up most of the dataset.</span></p><div class="mini-bars">
+<div class="mini-row"><span class="mini-label"><span class="zh-only">医疗救助</span><span class="en-only">Medical assistance</span></span><span class="bartrack"><i style="width:44.0%"></i></span><span class="mini-value">22</span></div>
+<div class="mini-row"><span class="mini-label"><span class="zh-only">专科医疗</span><span class="en-only">Specialist care</span></span><span class="bartrack"><i style="width:26.0%"></i></span><span class="mini-value">13</span></div>
+<div class="mini-row"><span class="mini-label"><span class="zh-only">专科参考</span><span class="en-only">Specialist care reference</span></span><span class="bartrack"><i style="width:18.0%"></i></span><span class="mini-value">9</span></div>
+<div class="mini-row"><span class="mini-label"><span class="zh-only">地方医保/救助</span><span class="en-only">Local insurance / assistance</span></span><span class="bartrack"><i style="width:6.0%"></i></span><span class="mini-value">3</span></div>
+<div class="mini-row"><span class="mini-label"><span class="zh-only">临床指南</span><span class="en-only">Clinical guidance</span></span><span class="bartrack"><i style="width:4.0%"></i></span><span class="mini-value">2</span></div>
+<div class="mini-row"><span class="mini-label"><span class="zh-only">公共卫生政策</span><span class="en-only">Public-health policy</span></span><span class="bartrack"><i style="width:2.0%"></i></span><span class="mini-value">1</span></div>
+</div></div>
+<div class="analysis-card"><h3><span class="zh-only">信息摩擦编码</span><span class="en-only">Information-friction coding</span></h3><p class="analysis-note"><span class="zh-only">每项0–2分；2分表示在当前来源中表现较充分。这里的“可靠性”衡量的是来源可追溯性，而不是医疗质量。</span><span class="en-only">Each dimension is scored 0–2; 2 indicates stronger performance within the reviewed source. “Reliability” here means source traceability, not clinical quality.</span></p><table class="score-table"><thead><tr><th><span class="zh-only">维度</span><span class="en-only">Dimension</span></th><th><span class="zh-only">平均分</span><span class="en-only">Mean</span></th><th><span class="zh-only">2分记录</span><span class="en-only">Score 2</span></th></tr></thead><tbody><tr><td><span class="zh-only">可发现性</span><span class="en-only">Findability</span></td><td>1.82/2</td><td>41/50 (82%)</td></tr><tr><td><span class="zh-only">完整性</span><span class="en-only">Completeness</span></td><td>1.66/2</td><td>33/50 (66%)</td></tr><tr><td><span class="zh-only">可靠性</span><span class="en-only">Reliability</span></td><td>2.00/2</td><td>50/50 (100%)</td></tr><tr><td><span class="zh-only">可行动性</span><span class="en-only">Actionability</span></td><td>1.70/2</td><td>35/50 (70%)</td></tr></tbody></table><div class="analysis-callout"><span class="zh-only"><b>初步观察：</b>当前样本中，来源可追溯性最稳定；相比之下，完整性与可行动性出现更多1分记录。这支持下一阶段把研究重点放在“信息是否足够让家庭采取下一步行动”，而不只是继续增加链接数量。</span><span class="en-only"><b>Preliminary observation:</b> source traceability is the most consistent dimension in this sample, while completeness and actionability contain more score-1 records. This suggests a useful next question: whether information is sufficient for a family to act, rather than simply whether more links can be collected.</span></div></div></div>
+<div class="feature" style="margin-top:16px"><h3><span class="zh-only">外部研究如何支持这个问题？</span><span class="en-only">How does the literature frame the problem?</span></h3><p class="section-desc"><span class="zh-only">既有研究把信息障碍视为唇腭裂照护可及性的一部分：系统综述记录了治疗信息误传，以及交通、距离和经济等障碍；一项中国唇腭裂患者调查发现，搜索引擎和社交媒体是重要的信息来源，并指出信息应以患者能够理解和获取的方式呈现。2026年的中国医疗可及性研究也表明，数字素养与机构治理会影响居民对医疗可及性的感受。这里的项目数据因此聚焦于一个更窄的问题：公开信息本身是否足够可发现、完整、可追溯、可行动。</span><span class="en-only">Existing research treats information barriers as part of cleft-care access: a systematic review identified misinformation alongside transport, distance and financial barriers; a Chinese cleft-care survey found search engines and social platforms to be important information sources and emphasized communicating medical information in accessible ways. A 2026 study of healthcare access in China also linked digital literacy and governance to perceived accessibility. This project therefore focuses on a narrower question: whether public information itself is findable, complete, traceable and actionable.</span></p><ul class="source-list"><li><a href="https://pubmed.ncbi.nlm.nih.gov/38847124/" target="_blank" rel="noopener">Systematic review of barriers to accessing cleft care</a></li><li><a href="https://openalex.org/W4402641915" target="_blank" rel="noopener">Survey of medical-access information sources among cleft patients in China</a></li><li><a href="https://www.sciencedirect.com/science/article/pii/S0264275126002179" target="_blank" rel="noopener">2026 study of perceived and spatial healthcare access in China</a></li></ul></div>
+</section><section class="section wrap" style="padding-top:0"><div class="feature"><h2><span class="zh-only">数据边界</span><span class="en-only">Dataset boundaries</span></h2><p class="section-desc"><span class="zh-only">本轮扩展至 50 条来源可追溯记录，覆盖国家指南、医院与高校专科来源、公益项目及地方医保/医疗救助信息。部分地方活动具有明确日期和适用范围，因此页面会标注“地方项目”或“活动项目”，避免把一次性活动误解为长期政策。</span><span class="en-only">This round expands the dataset to 50 source-traceable records covering national guidance, hospital and university specialist sources, charitable programs, and local insurance or assistance information. Time-bound local events are labeled as local programs or events so they are not mistaken for permanent national policy.</span></p></div></section><div class="site-pager"><a href="support.html"><span class="zh-only">← 公益与支持</span><span class="en-only">← Support</span></a><a class="right" href="about.html"><span class="zh-only">关于项目 →</span><span class="en-only">About →</span></a></div></main><footer class="footer"><div class="wrap footerrow">
+<div><span class="zh-only">唇腭裂医疗信息桥梁 · 来源可追溯的公开信息</span><span class="en-only">Cleft Care Information Bridge · Source-traceable public information</span></div>
+<div class="footerlinks"><a href="index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a><a href="dataset.html"><span class="zh-only">数据集</span><span class="en-only">Dataset</span></a><a href="resources.html"><span class="zh-only">医疗资源</span><span class="en-only">Resources</span></a><a href="pathway.html"><span class="zh-only">就诊路径</span><span class="en-only">Care Pathway</span></a><a href="support.html"><span class="zh-only">公益与支持</span><span class="en-only">Support</span></a><a href="research.html"><span class="zh-only">研究框架</span><span class="en-only">Research</span></a><a href="about.html"><span class="zh-only">关于项目</span><span class="en-only">About</span></a></div>
+</div></footer>
+<script>
+(function(){
+ const body=document.body, btn=document.getElementById('langToggle');
+ let lang=localStorage.getItem('ccib-lang')||'zh';
+ function apply(){
+   body.classList.toggle('lang-zh',lang==='zh'); body.classList.toggle('lang-en',lang==='en');
+   document.documentElement.lang=lang==='zh'?'zh-CN':'en'; document.title=lang==='zh'?'研究框架':'Research';
+   if(btn) btn.textContent=lang==='zh'?'切换至英文':'Switch to Chinese';
+   localStorage.setItem('ccib-lang',lang);
+   document.querySelectorAll('.fade-in').forEach(x=>{x.classList.remove('fade-in'); void x.offsetWidth; x.classList.add('fade-in')});
+ }
+ if(btn) btn.addEventListener('click',()=>{lang=lang==='zh'?'en':'zh';apply()});
+ document.querySelectorAll('a[href$=".html"]').forEach(a=>a.addEventListener('click',e=>{
+   const href=a.getAttribute('href'); if(href && !href.startsWith('http') && !href.startsWith('#')){e.preventDefault();body.classList.add('page-leave');setTimeout(()=>location.href=href,120);}
+ }));
+ apply();
+ 
+})();
+</script></body></html>
